@@ -23,7 +23,10 @@ from sklearn.metrics import (
     f1_score,
     precision_score
 )
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4f1ac24bebf507576b60f39097e011a95ac50066
 SHOW_PLOT = False
 OUTFILE = "comparison_adult_clean.png"
 
@@ -123,6 +126,10 @@ for idx, name in enumerate(model_names):
     ax_pr.set_title(f"PR curve — AUC = {res['pr_auc']:.3f}", fontsize=10)
     ax_pr.tick_params(labelsize=tick_fontsize)
 
+<<<<<<< HEAD
+=======
+    # Confusion matrix
+>>>>>>> 4f1ac24bebf507576b60f39097e011a95ac50066
     ax_cm = fig.add_subplot(gs[2, idx])
     cm = res["cm"]
     cm_sum = cm.sum()
